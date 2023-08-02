@@ -1,0 +1,207 @@
+.Section_top
+{
+    width:100%;
+    height: 70vh;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: change 10s infinite ease;
+    align-items: right;
+    /* background-position: center; */
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(/src/img/1.webp);
+    }
+    20%
+    {
+        background-image: url(/src/img/2.webp);
+    }
+    40%
+    {
+        background-image: url(/src/img/3.jpg);
+    }
+    60%
+    {
+        background-image: url(/src/img/4.jpg);
+    }
+    80%
+    {
+        background-image: url(/src/img/5.webp);
+    }
+    100%
+    {
+        background-image: url(/src/img/6.webp);
+    }
+}
+
+.header{
+    border-color: white;
+    background-color: red;
+    color: white;
+    text-align: center;
+    cursor:no-drop;
+    padding-right: 15px;
+}
+
+.bodybg{
+    background-color: #f6eeee;
+    /* border: 5px dotted black; */
+}
+
+.headerbtn{
+    border-color: red;
+    background-color: red;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin-left: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s,0.5s;
+}
+
+button:hover{
+    color: red;
+    background-color: whitesmoke;
+    font-family: emoji;
+    font-weight: bold;
+}
+
+a:hover{
+    color:rgb(163, 2, 2);
+    text-decoration:none;
+}
+
+.title{
+    background-color: red;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.more{
+    background:#CF0000;
+    color: white;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 20px;
+    right: 0;
+    text-transform: uppercase;
+    top: 10px;
+    text-decoration: none;
+}
+.more:hover{
+    color:white;
+    font-family: arial;
+}
+
+.cont1{
+    width: 100%;
+}
+
+.btnpadding{
+    padding-right: 10px;
+}
+
+.marq{
+    background-color: red;
+    color: whitesmoke;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.simg{
+    border: 2px solid  black;
+    width: 180px;
+    height: 100px;
+    transition: height 1s,width 1s;
+}
+
+.simg:hover{
+    width: 230px;
+    height: 150px;
+}
+
+.ftr{
+    background-color: rgb(242, 150, 150);
+    /* background-color: rgb(255, 141, 141); */
+    color: white;
+    text-align: left;   
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.ftrtable{
+    width: 100%;
+    padding-left: 100px;
+    text-decoration: none;
+}
+
+.ftrhd{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+    animation-name: fadeinup;
+}
+.i
+{
+    width: 30px;
+    border-radius: 20px;
+    margin: -15px;
+}
+.frame{
+    border: 3px solid black;
+}
+
+.ftrlink{
+    text-decoration: none;
+    color: white;
+}
+
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: 200;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+}
+
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: -10;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0.5s;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+
+.btnfr{
+    align-items: right;
+    padding-left: 1047px;
+}
